@@ -3,7 +3,7 @@ pipeline {
     
 environment {
         Git_Url = 'https://github.com/profojah/MyProject.git'
-        Tomcat_Url = 'http://54.210.10.242:8080'
+        Tomcat_Url = 'http://54.144.194.54:8080'
         Tomcat_Cred = 'a8ea9772-4b03-4102-bce2-d3b57ac46846'
     }
 
