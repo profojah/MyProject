@@ -3,8 +3,7 @@ pipeline {
     
 environment {
         Git_Url = 'https://github.com/profojah/MyProject.git'
-        Tomcat_Url = 'http://3.82.92.221:8080/'
-        Tomcat_Cred = 'a8ea9772-4b03-4102-bce2-d3b57ac46846'
+        Tomcat_Url = 'http://3.80.142.23:8080/'
     }
 
     stages {
@@ -20,7 +19,7 @@ environment {
         }
         stage('Deploy with Tomcat') {
             steps {
-               deploy adapters: [tomcat9(credentialsId: "${Tomcat_Cred}", 
+               deploy adapters: [tomcat9(credentialsId: 'tomcat-id', 
                path: '', 
                url: "${Tomcat_url}")], 
                contextPath: 'webapp', 
