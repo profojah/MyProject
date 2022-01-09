@@ -4,6 +4,8 @@ pipeline {
 environment {
         Git_Url = 'https://github.com/profojah/MyProject.git'
         Tomcat_Url = 'http://3.234.223.144:8080/'
+       Jfrog_Url = 'http://54.236.32.117:8082/artifactory'
+       My_Pass = 'Palynologist1.'
     }
 
     stages {
@@ -19,16 +21,11 @@ environment {
         }
         stage('Deploy to Jfrog') {
             steps {
-              rtUpload (
-                    serverId: 'Olu-Jfrog',
-                    spec: '''{
-                        "files": [
-                            {
-                            "pattern": "**/*.war",
-                            "target": "Ojah-repo/"
-                            }
-                        ]
-                    }''',
+                            rtServer (
+                    id: 'Olu-Jfrog',
+                    url: : "${Jfrog_url}",
+                    username: 'admin',
+                    password: "${My_pass}",
                 )
             }
         }
