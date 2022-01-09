@@ -3,7 +3,7 @@ pipeline {
     
 environment {
         Git_Url = 'https://github.com/profojah/MyProject.git'
-        Tomcat_Url = 'http://3.80.142.23:8080/'
+        Tomcat_Url = 'http://3.234.223.144:8080/'
         Jfrog_Url = 'http://54.236.32.117:8082'
     }
 
