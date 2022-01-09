@@ -17,18 +17,6 @@ environment {
                 sh 'cd SampleWebApp && mvn clean install'
             }
         }
-         stage('Deploy to Jfrog') {
-            steps {
-                rtUpload (
-                serverId: 'Olu-Jfrog',
-                spec: '''{
-                    "files": [
-                        {
-                        "pattern": "**/*.war",
-                        "target": "Ojah-repo/"
-                        }
-                    ]
-                }''',
         stage('Deploy with Tomcat') {
             steps {
                deploy adapters: [tomcat9(credentialsId: 'tomcat-id', 
