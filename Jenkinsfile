@@ -23,7 +23,7 @@ environment {
             steps {
                             rtServer (
                     id: 'Olu-Jfrog',
-                    url: : "${Jfrog_url}",
+                    url: "${Jfrog_url}",
                     username: 'admin',
                     password: "${My_pass}",
                 )
