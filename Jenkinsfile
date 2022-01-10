@@ -16,7 +16,7 @@ environment {
         }
         stage('Test with Maven') {
             steps {
-                sh 'cd SampleWebApp && mvn clean install'
+                sh 'cd SampleWebApp && mvn clean install -Dbuild.number=${build_number}'
             }
         }
         stage('Deploy to Jfrog') {
