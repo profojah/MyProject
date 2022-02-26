@@ -3,8 +3,8 @@ pipeline {
     
 environment {
         Git_Url = 'https://github.com/profojah/MyProject.git'
-        Tomcat_Url = 'http://3.234.223.144:8080/'
-       Jfrog_Url = 'http://54.236.32.117:8082/artifactory'
+        Tomcat_Url = 'http://54.236.57.40:8080/'
+       Jfrog_Url = 'http://44.192.97.107:8082/artifactory'
        My_Pass = 'Palynologist1.'
     }
 
