@@ -3,12 +3,9 @@
     <title>Welcome to my web page</title>
   </head>
   <body bgcolor="#FFF00">
-    <h1>DevOps Training Batch C Web Survey... Created by Ojah</h1>
+    <h1>DevOps Training Batch C Web Survey... Created by Ojah..</h1>
 
-            <p>Let us create some vote memo for the Batch C folks on this text area below</p> <!--This control is for mutplie line comment-->
-            <textarea name="comments" cols="30" rows="5"></textarea>
-
-
+          
             <p>What is your favorite topic from the Class <br /> <!--Checkbox control-->
                 <input type ="Checkbox" name="topic" value="Jenkins"/>Jenkins <br />
                 <input type ="Checkbox" name="topic" value="Ansible"/>Ansible <br />
@@ -26,6 +23,14 @@
                 <input type ="Checkbox" name="topic" value="Tomcat"/>Tomcat <br />
                 <input type ="Checkbox" name="topic" value="JFrog"/>JFrog <br />
             </p>
+    
+           <p>What Certifications do you plan to write after this class? <br /> <!--Checkbox control-->
+                <input type ="Checkbox" name="topic" value="AWS"/>AWS <br />
+                <input type ="Checkbox" name="topic" value="Azure"/>Azure <br />
+                <input type ="Checkbox" name="topic" value="Terraform"/>Terraform <br />
+                <input type ="Checkbox" name="topic" value="Kubernetes"/>Kubernetes <br />
+                <input type ="Checkbox" name="topic" value="Oracle"/>Oracle <br />
+                <input type ="Checkbox" name="topic" value="Others"/>Others <br />
 
             <p>Who always ask the most questions in class? <br /> <!--Checkbox control-->
                 <input type ="Checkbox" name="topic" value="Ben"/>Ben <br />
